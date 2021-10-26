@@ -54,14 +54,21 @@ public class Bruch
          *  Retournieren Sie ihre neue Bruch-Variable
          * */
 
+        int newNumerator = this.numerator * b2.getNumerator();
+        int newDenominator = this.denominator * b2.getDenominator();
+        Bruch neuerBruch = new Bruch(newNumerator, newDenominator);
 
-        return null;
+        return neuerBruch;
     }
 
     public Bruch multiplicate(Bruch b2, Bruch b3)
     {
         // TODO: Multiplizieren Sie den eigenen Bruch mit b2 und b3
 
-        return null;
+        int newNumerator = this.numerator * b2.getNumerator()* b3.getNumerator();
+        int newDenominator = this.denominator * b2.getDenominator()* b3.getDenominator();
+        Bruch neuerBruch = new Bruch(newNumerator, newDenominator);
+
+        return neuerBruch;
     }
 }
