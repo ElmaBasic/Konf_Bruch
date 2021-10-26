@@ -3,6 +3,7 @@ public class Bruch
     private int numerator; // Zähler
     private int denominator; // Nenner
 
+
     public Bruch(int numerator, int denominator)
     {
         // TODO: Setzen Sie die Attribute entsprechend
@@ -25,21 +26,22 @@ public class Bruch
         // TODO: Die Methode soll den Dezimalwert zum Bruch retournieren
         // Achtung: Ganzzahldivision!
         if (denominator > 0)
-        {
-            double result = (this.numerator / this.denominator);
+        {double n = this.numerator;
+            double d = this.denominator;
+
+            double result = (n / d);
             return result;
         } else
         {
             return 0;
+
         }
-
-
     }
 
     public String print()
     {
         // TODO: Die Methode soll den Bruch als Text retournieren z.B.: "5 / 7"
-        return "";
+        return this.numerator + "/" + this.denominator;
     }
 
     public Bruch multiplicate(Bruch b2)
